@@ -1,0 +1,4 @@
+gc_credentials.json
+*/.DS_Store
+./backend/creds.json
+best_weights.hdf5
