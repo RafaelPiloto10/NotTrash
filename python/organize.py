@@ -1,5 +1,5 @@
 #access txtfile
-f = open("Classification.txt","r")
+f = open('python\list.txt',"r")
 
 data = f.read()
 
@@ -41,7 +41,7 @@ from pprint import pprint
 
 scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
 
-creds = ServiceAccountCredentials.from_json_keyfile_name("creds.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('python\creds.json', scope)
 
 client = gspread.authorize(creds)
 
