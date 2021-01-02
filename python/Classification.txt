@@ -1,0 +1,10 @@
+Classification
+recycable
+organic
+organic
+trash
+recycable
+trash
+trash
+recycable
+trash
