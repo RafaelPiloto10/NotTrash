@@ -7,13 +7,14 @@ scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/aut
 creds = ServiceAccountCredentials.from_json_keyfile_name('backend\creds.json', scope)
 client = gspread.authorize(creds)
 
+#get data from database
 def request():
     #access google sheets database
     database = client.open("organizedData").get_worksheet(2)
     data = database.get_all_records()
     return data
 
-#-counters
+#counters
 def count(data) :
     #recyclable items
     recycle =  sum([1 for i in range(len(data)) if data[i]["Classification"] == 'recycable'])
@@ -22,8 +23,7 @@ def count(data) :
     #landfill items
     landfill = sum([1 for i in range(len(data)) if data[i]["Classification"] == 'trash'])
     #updates sheets
-    update(recycle, compost, landfill)
-    return
+    return recycle, compost, landfill
 
 #update google sheets
 def update(r, c, l):
@@ -40,4 +40,6 @@ def update(r, c, l):
     print('landfill:', l)
     return
 
-count(request())
+r,c, l = count(request())
+
+update(r, c, l)
