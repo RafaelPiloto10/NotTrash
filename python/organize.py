@@ -1,19 +1,37 @@
-#access txtfile
-f = open('python\list.txt',"r")
+#google sheets
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+from pprint import pprint
 
-data = f.read()
+scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
+
+creds = ServiceAccountCredentials.from_json_keyfile_name('python\creds.json', scope)
+
+client = gspread.authorize(creds)
+
+#access google sheets database
+database = client.open("organizedData").get_worksheet(2)
+
+data = database.get_all_records()
+
+pprint(data)
+
+#access txtfile
+#f = open('python\list.txt',"r")
+
+#data = f.read()
 
 #parse txtfile
 
 #-counters
 #-------recyclable items
-recycle = data.count("recycable")
+recycle =  sum([1 for i in range(len(data)) if data[i]["Classification"] == 'recycable'])
 
 #-------compostable items
-compost = data.count("organic")
+compost = sum([1 for i in range(len(data)) if data[i]["Classification"] == 'organic'])
 
 #-------landfill items
-landfill = data.count("trash")
+landfill = sum([1 for i in range(len(data)) if data[i]["Classification"] == 'trash'])
 
 
 #print items
@@ -34,23 +52,13 @@ alldata.append(landfill)
 
 print(alldata)
 
-#excel sheet
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
-from pprint import pprint
-
-scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
-
-creds = ServiceAccountCredentials.from_json_keyfile_name('python\creds.json', scope)
-
-client = gspread.authorize(creds)
-
+#update google sheets
 sheet = client.open("organizedData").sheet1
 
-#data = sheet.get_all_records()
-#pprint(data)
+data2 = sheet.get_all_records()
 
-#update google sheets
+pprint(data2)
+
 sheet.update_cell(2,2, recycle)
 sheet.update_cell(3,2, compost)
 sheet.update_cell(4,2, landfill)
