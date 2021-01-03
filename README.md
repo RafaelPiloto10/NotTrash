@@ -9,6 +9,7 @@
 ## Accomplishments that we're proud of and what we learned
 
 ## What's next for !Trash
+Not trash is currently patent pending and we hope to continue work on it because we believe with more time and better resources, our product will encourage people to make a positive impact on our environment. 
 
 ## Built With
 
