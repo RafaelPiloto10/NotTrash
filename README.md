@@ -11,7 +11,7 @@ For the backend we coded it to use Google API to retrieve the incoming data from
 We created and designed the website and embedded a fast-updating pie chart graphical representation that models data processed by the backend to display on the Global Analytics page. 
 The Global Analytics page works by displaying an image of a graph created using Google Sheets and is updated with data changed in the Sheet by the backend. 
 ## Challenges we ran into
-Initially, the Global Analytics page embed from default Google Sheets would take 3-5 minutes to update, but we were able to improve this to update upon one page refresh. 
+Initially, the Global Analytics page embed from default Google Sheets would take 3-5 minutes to update, but we were able to improve this to update upon one page refresh. We also had trouble figuring out how the database should be set up and ended up using Google Sheets API to have the incoming data go to a google sheets page.
 ## Accomplishments that we're proud of and what we learned
 We are proud of selecting a medium challenging project that is both prototype completable in the Hackathon period and more advanced than just one method. We learned how to structure our time much better than we have in previous hackathons. 
 ## What's next for !Trash
