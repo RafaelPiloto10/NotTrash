@@ -33,7 +33,7 @@ We are proud of selecting a challenging project that is both prototype completab
 Most noticeably, we are proud of our ability to create a project out of something so complex. **One of our members had to learn Python from scratch!** We also had to learn TensorFlow and OpenCV as no one in our team had experience with Machine Learning. 
 
 ## What's next for !Trash
-!Trash is currently patent pending and we hope that with more time and better resources we can continue to work on it by building prototypes that will more accurately reflect the goals we want to display. We believe our product will encourage people to make a positive impact on our environment. 
+**!Trash is currently patent pending** and we hope that with more time and better resources we can continue to work on it by building prototypes that will more accurately reflect the goals we want to display. We believe our product will encourage people to make a positive impact on our environment. 
 
 ## Built With
 Python, Tensorflow, OpenCV, Google Cloud, OpenCV, Arduino, Weebly
