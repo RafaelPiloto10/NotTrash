@@ -8,7 +8,7 @@ By using the weights determined through training we were able to utilize the mod
 Our team used OpenCV to create a live feed to our model, which allows the user to present any item and get an instant classification.
 Finally we incorporated the hardware portion of our project by using an Arduino to present the user with a flashing light (either red, green, or blue) to denote the classification of the object. 
 For the backend we coded it to use Google API to retrieve the incoming data from the google sheets database to update the frequency of each classification within a google sheets. This is so the information can stay up to date for the consumer.
-I created and designed the website and embedded a fast-updating pie chart graphical representation that models data processed by the backend to display on the Global Analytics page. 
+We created and designed the website and embedded a fast-updating pie chart graphical representation that models data processed by the backend to display on the Global Analytics page. 
 The Global Analytics page works by displaying an image of a graph created using Google Sheets and is updated with data changed in the Sheet by the backend. 
 ## Challenges we ran into
 Initially, the Global Analytics page embed from default Google Sheets would take 3-5 minutes to update, but we were able to improve this to update upon one page refresh. 
