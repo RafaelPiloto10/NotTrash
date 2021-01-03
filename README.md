@@ -1,5 +1,16 @@
 # !Trash
 
+![alt text](./imgs/header.png)
+![alt text](./imgs/logo.png)
+
+## Demo Video
+
+[![Not Trash Demo Video](https://img.youtube.com/vi/d0ID3JRbW1A/0.jpg)](http://www.youtube.com/watch?v=d0ID3JRbW1A)
+
+## Hardware
+
+![alt text](./imgs/hardware.png)
+
 ## Inspiration & What it does
 
 !Trash (nɒt træʃ) aims to prevent recyclables from going into the trash by equipping household trash cans with a camera on the underside of the lid to detect and categorize materials being discarded. Our inspiration stems from the infamous New Years Resolution: "I am going to be environmentally cleaner this year!". !Trash, helps you stay clean!
@@ -15,6 +26,8 @@ Our team then used OpenCV to create a live video stream to our model, which allo
 Finally, we incorporated a hardware portion to our project using an Arduino to present the user with a flashing light (either red, green, or blue) to denote the classification of the object. This acts as visual feedback for the user for when !Trash is embedded into small devices attached to trash can lids.
 
 We coded our backend to use the Google Cloud Services and API to retrieve the incoming analytics from our classification to update the frequency of each classification within a google sheet. This is so the information can stay up to date for the consumer and displayed graphically on our [website](https://newyearnottrash.weebly.com/).
+
+![alt text](./imgs/chart.png)
 
 The front-end was created and designed to embed a fast-updating pie chart graphical representation that models data processed by the backend to display on the Global Analytics page.
 
