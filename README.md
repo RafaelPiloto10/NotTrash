@@ -9,6 +9,7 @@ Initially, the Global Analytics page embed from default Google Sheets would take
 ## Accomplishments that we're proud of and what we learned
 
 ## What's next for !Trash
+!Trash is currently patent pending and we hope that with more time and better resources we can continue to work on it by building prototypes that will more accurately reflect the data we want to display. We believe our product will encourage people to make a positive impact on our environment. 
 
 ## Built With
 Python, Weebly, Google Cloud, OpenCV, Arduino
