@@ -13,7 +13,7 @@ The Global Analytics page works by displaying an image of a graph created using 
 ## Challenges we ran into
 Initially, the Global Analytics page embed from default Google Sheets would take 3-5 minutes to update, but we were able to improve this to update upon one page refresh. 
 ## Accomplishments that we're proud of and what we learned
-We are proud of selecting a medium challenging project that is both prototype completable in the Hackathon period and more advanced than just one method. We also feel we structured our time much better than we have in previous hackathons. 
+We are proud of selecting a medium challenging project that is both prototype completable in the Hackathon period and more advanced than just one method. We learned how to structure our time much better than we have in previous hackathons. 
 ## What's next for !Trash
 !Trash is currently patent pending and we hope that with more time and better resources we can continue to work on it by building prototypes that will more accurately reflect the data we want to display. We believe our product will encourage people to make a positive impact on our environment. 
 
