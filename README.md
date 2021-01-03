@@ -5,7 +5,7 @@
 ## How we built it
 
 ## Challenges we ran into
-
+Initially, the Global Analytics page embed from default Google Sheets would take 3-5 minutes to update, but we were able to improve this to update upon one page refresh. 
 ## Accomplishments that we're proud of and what we learned
 
 ## What's next for !Trash
