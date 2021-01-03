@@ -11,5 +11,6 @@ Initially, the Global Analytics page embed from default Google Sheets would take
 ## What's next for !Trash
 
 ## Built With
-
+Python, Weebly, Google Cloud, OpenCV, Arduino
 ## Try it out
+https://newyearnottrash.weebly.com/
